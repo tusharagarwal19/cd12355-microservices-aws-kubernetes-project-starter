@@ -120,7 +120,7 @@ The benefit here is that it's explicitly set. However, note that the `DB_PASSWOR
    ![image](https://github.com/user-attachments/assets/21eeccd0-284a-4b63-a63b-967ee06a03e6)
 
 5. Screenshot of `kubectl get pods`
-![image](https://github.com/user-attachments/assets/1297f515-897c-4fc3-aba1-48cc71adb7e8)
+   ![image](https://github.com/user-attachments/assets/1297f515-897c-4fc3-aba1-48cc71adb7e8)
  
 6. Screenshot of `kubectl describe svc <DATABASE_SERVICE_NAME>`
    ![image](https://github.com/user-attachments/assets/61cd3244-5685-44aa-b426-5b44e6d531a1)
@@ -129,8 +129,9 @@ The benefit here is that it's explicitly set. However, note that the `DB_PASSWOR
   ![image](https://github.com/user-attachments/assets/2ff3d998-519b-48f1-a875-77f77ac4b2d9)
 
 10. All Kubernetes config files used for deployment (ie YAML files)
-11. Screenshot of AWS CloudWatch logs for the application
-12. `README.md` file in your solution that serves as documentation for your user to detail how your deployment process works and how the user can deploy changes. The details should not simply rehash what you have done on a step by step basis. Instead, it should help an experienced software developer understand the technologies and tools in the build and deploy process as well as provide them insight into how they would release new builds.
+    All YAML files are present at the repo link --> 
+12. Screenshot of AWS CloudWatch logs for the application
+13. `README.md` file in your solution that serves as documentation for your user to detail how your deployment process works and how the user can deploy changes. The details should not simply rehash what you have done on a step by step basis. Instead, it should help an experienced software developer understand the technologies and tools in the build and deploy process as well as provide them insight into how they would release new builds.
 
 
 ### Stand Out Suggestions
