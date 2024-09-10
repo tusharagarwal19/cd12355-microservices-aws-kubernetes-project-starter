@@ -1,0 +1,28 @@
+version: 0.2
+
+env:
+  variables:
+    REPOSITORY_URI: "<account_id>.dkr.ecr.<region>.amazonaws.com/coworking-analytics-app"
+    IMAGE_TAG: "${CODEBUILD_BUILD_NUMBER}"
+
+phases:
+  pre_build:
+    commands:
+      - echo Logging in to Amazon ECR...
+      - aws --version
+      - $(aws ecr get-login-password --region <region>) | docker login --username AWS --password-stdin <account_id>.dkr.ecr.<region>.amazonaws.com
+      - echo Build started on `date`
+  build:
+    commands:
+      - echo Building the Docker image...
+      - docker build -t $REPOSITORY_URI:latest .
+      - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Pushing the Docker image to ECR...
+      - docker push $REPOSITORY_URI:latest
+      - docker push $REPOSITORY_URI:$IMAGE_TAG
+artifacts:
+  files:
+    - '**/*'
