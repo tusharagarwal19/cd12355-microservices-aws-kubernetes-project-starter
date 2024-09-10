@@ -108,16 +108,29 @@ The benefit here is that it's explicitly set. However, note that the `DB_PASSWOR
 5. Check AWS CloudWatch for application logs
 
 ### Deliverables
-1. `Dockerfile`
+1. `Dockerfile` -->
+   Link given here https://github.com/tusharagarwal19/cd12355-microservices-aws-kubernetes-project-starter/blob/main/Dockerfile
 2. Screenshot of AWS CodeBuild pipeline
+   ![image](https://github.com/user-attachments/assets/3418e8b3-5742-43dd-878d-6f1ca4a91076)
+
 3. Screenshot of AWS ECR repository for the application's repository
+   ![image](https://github.com/user-attachments/assets/d88cac50-de0a-4166-a1ad-50339d181eda)
+
 4. Screenshot of `kubectl get svc`
+   ![image](https://github.com/user-attachments/assets/21eeccd0-284a-4b63-a63b-967ee06a03e6)
+
 5. Screenshot of `kubectl get pods`
+![image](https://github.com/user-attachments/assets/1297f515-897c-4fc3-aba1-48cc71adb7e8)
+ 
 6. Screenshot of `kubectl describe svc <DATABASE_SERVICE_NAME>`
+   ![image](https://github.com/user-attachments/assets/61cd3244-5685-44aa-b426-5b44e6d531a1)
+
 7. Screenshot of `kubectl describe deployment <SERVICE_NAME>`
-8. All Kubernetes config files used for deployment (ie YAML files)
-9. Screenshot of AWS CloudWatch logs for the application
-10. `README.md` file in your solution that serves as documentation for your user to detail how your deployment process works and how the user can deploy changes. The details should not simply rehash what you have done on a step by step basis. Instead, it should help an experienced software developer understand the technologies and tools in the build and deploy process as well as provide them insight into how they would release new builds.
+  ![image](https://github.com/user-attachments/assets/2ff3d998-519b-48f1-a875-77f77ac4b2d9)
+
+10. All Kubernetes config files used for deployment (ie YAML files)
+11. Screenshot of AWS CloudWatch logs for the application
+12. `README.md` file in your solution that serves as documentation for your user to detail how your deployment process works and how the user can deploy changes. The details should not simply rehash what you have done on a step by step basis. Instead, it should help an experienced software developer understand the technologies and tools in the build and deploy process as well as provide them insight into how they would release new builds.
 
 
 ### Stand Out Suggestions
