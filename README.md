@@ -1,4 +1,4 @@
-# Coworking Space Service Extension
+![image](https://github.com/user-attachments/assets/4e2f5584-1739-490e-ace7-3d1521e58ed0)# Coworking Space Service Extension
 The Coworking Space Service is a set of APIs that enables users to request one-time tokens and administrators to authorize access to a coworking space. This service follows a microservice pattern and the APIs are split into distinct services that can be deployed and managed independently of one another.
 
 For this project, you are a DevOps engineer who will be collaborating with a team that is building an API for business analysts. The API provides business analysts basic analytics data on user activity in the service. The application they provide you functions as expected locally and you are expected to help build a pipeline to deploy it in Kubernetes.
@@ -128,10 +128,19 @@ The benefit here is that it's explicitly set. However, note that the `DB_PASSWOR
 7. Screenshot of `kubectl describe deployment <SERVICE_NAME>`
   ![image](https://github.com/user-attachments/assets/2ff3d998-519b-48f1-a875-77f77ac4b2d9)
 
-10. All Kubernetes config files used for deployment (ie YAML files)
-    All YAML files are present at the repo link --> 
-12. Screenshot of AWS CloudWatch logs for the application
-13. `README.md` file in your solution that serves as documentation for your user to detail how your deployment process works and how the user can deploy changes. The details should not simply rehash what you have done on a step by step basis. Instead, it should help an experienced software developer understand the technologies and tools in the build and deploy process as well as provide them insight into how they would release new builds.
+9. All Kubernetes config files used for deployment (ie YAML files)
+    All YAML files are present at the repo link --> https://github.com/tusharagarwal19/cd12355-microservices-aws-kubernetes-project-starter/tree/main/deployment
+
+10. Screenshot of configuration of cloud watch logs
+    ![image](https://github.com/user-attachments/assets/f909d236-8760-4b9f-818d-7276621c3d5d)
+    
+
+11. Screenshot of AWS CloudWatch logs for the application
+    ![image](https://github.com/user-attachments/assets/c6255ed3-6c0a-4643-a5a5-2f0046b8cd6c)
+    ![image](https://github.com/user-attachments/assets/1c2f2081-1cf5-48e5-b14a-531ea01f94c3)
+
+
+12. `README.md` file in your solution that serves as documentation for your user to detail how your deployment process works and how the user can deploy changes. The details should not simply rehash what you have done on a step by step basis. Instead, it should help an experienced software developer understand the technologies and tools in the build and deploy process as well as provide them insight into how they would release new builds.
 
 
 ### Stand Out Suggestions
