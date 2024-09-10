@@ -2,27 +2,28 @@ version: 0.2
 
 env:
   variables:
-    REPOSITORY_URI: "<account_id>.dkr.ecr.<region>.amazonaws.com/coworking-analytics-app"
-    IMAGE_TAG: "${CODEBUILD_BUILD_NUMBER}"
+    AWS_DEFAULT_REGION: "us-east-1"   # Specify your region here
+    AWS_ACCOUNT_ID: "115950645742"    # Replace with your actual AWS account ID
+    ECR_REPO_NAME: "coworking-analytics-app" # Name of your ECR repository
 
 phases:
   pre_build:
     commands:
-      - echo Logging in to Amazon ECR...
-      - aws --version
-      - $(aws ecr get-login-password --region <region>) | docker login --username AWS --password-stdin <account_id>.dkr.ecr.<region>.amazonaws.com
-      - echo Build started on `date`
+      - echo Logging into ECR
+      - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
   build:
     commands:
+      - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t $REPOSITORY_URI:latest .
-      - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
+      - docker build -t $ECR_REPO_NAME .
+      - echo Tagging the Docker image with build number $CODEBUILD_BUILD_NUMBER...
+      - docker tag $ECR_REPO_NAME:latest $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$ECR_REPO_NAME:$CODEBUILD_BUILD_NUMBER
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image to ECR...
-      - docker push $REPOSITORY_URI:latest
-      - docker push $REPOSITORY_URI:$IMAGE_TAG
+      - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$ECR_REPO_NAME:$CODEBUILD_BUILD_NUMBER
 artifacts:
   files:
     - '**/*'
+  discard-paths: yes
