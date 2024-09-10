@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name: coworking
-        image: 115950645742.dkr.ecr.us-east-1.amazonaws.com/test-coworking-analytics-test  # Replace with your Docker image URI
+        image: 115950645742.dkr.ecr.us-east-1.amazonaws.com/test-coworking-analytics-test:15  # Replace with your Docker image URI
         imagePullPolicy: IfNotPresent
         livenessProbe:
           httpGet:
