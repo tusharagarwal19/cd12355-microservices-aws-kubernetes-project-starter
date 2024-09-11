@@ -331,13 +331,15 @@ This provides the full workflow from creating an EKS cluster, setting up Postgre
 10. Screenshot of configuration of cloud watch logs
     ![image](https://github.com/user-attachments/assets/f909d236-8760-4b9f-818d-7276621c3d5d)
     
-
 11. Screenshot of AWS CloudWatch logs for the application
     ![image](https://github.com/user-attachments/assets/c6255ed3-6c0a-4643-a5a5-2f0046b8cd6c)
-    ![image](https://github.com/user-attachments/assets/1c2f2081-1cf5-48e5-b14a-531ea01f94c3)
+    
+12. Screenshot of CloudWatch logs showing the logs of the application, which periodically prints the database output.    
+    <img width="931" alt="image" src="https://github.com/user-attachments/assets/0d840744-6fb7-448f-a07a-aaa6cd0d7756">
 
 
-12. `README.md` file in your solution that serves as documentation for your user to detail how your deployment process works and how the user can deploy changes. The details should not simply rehash what you have done on a step by step basis. Instead, it should help an experienced software developer understand the technologies and tools in the build and deploy process as well as provide them insight into how they would release new builds.
+
+14. `README.md` file in your solution that serves as documentation for your user to detail how your deployment process works and how the user can deploy changes. The details should not simply rehash what you have done on a step by step basis. Instead, it should help an experienced software developer understand the technologies and tools in the build and deploy process as well as provide them insight into how they would release new builds.
 
 
 ### Stand Out Suggestions
