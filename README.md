@@ -317,12 +317,14 @@ This provides the full workflow from creating an EKS cluster, setting up Postgre
    ![image](https://github.com/user-attachments/assets/21eeccd0-284a-4b63-a63b-967ee06a03e6)
 
 5. Screenshot of `kubectl get pods`
+   
    ![image](https://github.com/user-attachments/assets/1297f515-897c-4fc3-aba1-48cc71adb7e8)
  
 6. Screenshot of `kubectl describe svc <DATABASE_SERVICE_NAME>`
+   
    ![image](https://github.com/user-attachments/assets/61cd3244-5685-44aa-b426-5b44e6d531a1)
 
-7. Screenshot of `kubectl describe deployment <SERVICE_NAME>`
+8. Screenshot of `kubectl describe deployment <SERVICE_NAME>`
   ![image](https://github.com/user-attachments/assets/2ff3d998-519b-48f1-a875-77f77ac4b2d9)
 
 9. All Kubernetes config files used for deployment (ie YAML files)
