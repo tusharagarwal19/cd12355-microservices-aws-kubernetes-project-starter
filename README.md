@@ -307,12 +307,12 @@ This provides the full workflow from creating an EKS cluster, setting up Postgre
 ### Deliverables
 1. `Dockerfile` -->
    Link given here https://github.com/tusharagarwal19/cd12355-microservices-aws-kubernetes-project-starter/blob/main/Dockerfile
-2. Screenshot of AWS CodeBuild pipeline
-   ![image](https://github.com/user-attachments/assets/3418e8b3-5742-43dd-878d-6f1ca4a91076)
-
+2. Screenshot of AWS CodeBuild pipeline that shows that the build process was triggered automatically by GitHub and pushed a built Docker image into ECR and the build status was successful.
+   <img width="827" alt="image" src="https://github.com/user-attachments/assets/9851550d-65cb-4b0d-bfc7-d88fa0b4ec9e">
 3. Screenshot of AWS ECR repository for the application's repository
-   ![image](https://github.com/user-attachments/assets/d88cac50-de0a-4166-a1ad-50339d181eda)
+   <img width="794" alt="image" src="https://github.com/user-attachments/assets/d5abf4a4-7a4d-4a99-8051-fd56b8c7ceec">
 
+   
 4. Screenshot of `kubectl get svc`
    ![image](https://github.com/user-attachments/assets/21eeccd0-284a-4b63-a63b-967ee06a03e6)
 
